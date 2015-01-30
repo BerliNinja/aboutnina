@@ -1,0 +1,29 @@
+.container
+  .jumbotron
+    %h1 Welcome
+    .hero-unit
+      %p Hier finden Sie alle wichtigen Informationen über mich:
+
+    %div{:align => "center"}
+      .rahmen
+        %img#bilderrahmen{:onmouseout => "wechselZurueck()", :onmouseover => "wechselHin()", :src => "/img/me/nina_1.jpg"}/
+
+:javascript
+  var bild1;
+  var bild2;
+  function vorladen()
+  {
+       bild1 = new Image();
+       bild1.src = "/img/me/nina_1.jpg";
+       bild2 = new Image();
+       bild2.src = "/img/me/nina_2.jpg";
+  }
+  function wechselHin()
+  {
+       document.getElementById("bilderrahmen").src = bild2.src;
+  }
+  function wechselZurueck()
+  {
+       document.getElementById("bilderrahmen").src = bild1.src;
+  }
+  window.onload = vorladen();
