@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
   get '/me' => 'pages#me'
   get '/mycode' => 'pages#mycode'
-  get '/exchange' => 'pages#exchange'
+  get '/exchanges' => 'pages#exchanges'
   get '/hobbies' => 'pages#hobbies'
   get '/education' => 'pages#education'
   get '/skills' => 'pages#skills'
