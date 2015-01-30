@@ -1,10 +1,19 @@
 @import "bootstrap";
 
+/* ---------------------------------images--------------------------------------- */
+
 img {
   width: 190px;
   height: 120px;
 }
 
+
+.img-big img{
+  width: 1428px;
+  height: 598px;
+}
+
+/* ---------------------------------navbar--------------------------------------- */
 .navbar-inverse {
   background-color: #D41964;
   color: white;
@@ -19,21 +28,29 @@ img {
   }
 }
 
+/* ---------------------------------jumbotron--------------------------------------- */
+
 .jumbotron {
   background-color: #EECCDA;
   opacity: 0.95;
+  padding: -10px;
+
 }
 
-.img-big img{
-  width: 1428px;
-  height: 598px;
+.container {
+  padding: 0px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
+
+/* ---------------------------------body--------------------------------------- */
 
 body {
   background-size: 100%;
+  padding: 0;
 }
 
-/* Turning background pink an text white */
+/* -----------------------------Turning background pink an text white------------------------------ */
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
   background-color: pink;
@@ -57,4 +74,8 @@ body {
 
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
   background-color: pink;
+}
+
+hr {
+  color: black;
 }
