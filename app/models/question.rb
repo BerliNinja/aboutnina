@@ -1,5 +1,3 @@
-class Questions < ActiceRecord::Base
-  inherit_resources
-
+class Question < ActiveRecord::Base
   validates :title, presence: true
 end
