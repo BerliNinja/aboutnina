@@ -13,4 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require lightbox.min
+//= require jquery.flexslider
+//= require bootstrap-sprockets
 //= require_tree .
