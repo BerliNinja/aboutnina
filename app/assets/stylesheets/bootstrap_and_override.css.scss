@@ -1,0 +1,60 @@
+@import "bootstrap";
+
+img {
+  width: 190px;
+  height: 120px;
+}
+
+.navbar-inverse {
+  background-color: #D41964;
+  color: white;
+  border: none;
+}
+
+.navbar-nav a{
+  text-decoration: none;
+  color: white;
+  &, &:active, &:visited, &:hover {
+    color: white;
+  }
+}
+
+.jumbotron {
+  background-color: #EECCDA;
+  opacity: 0.95;
+}
+
+.img-big img{
+  width: 1428px;
+  height: 598px;
+}
+
+body {
+  background-size: 100%;
+}
+
+/* Turning background pink an text white */
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+  background-color: pink;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: white;
+}
+
+.navbar-inverse .navbar-brand {
+  color: white;
+}
+
+.navbar-inverse .navbar-text {
+  color: white;
+}
+
+.navbar-nav a, .navbar-nav a:active, .navbar-nav a:visited, .navbar-nav a:hover {
+  color: grey;
+}
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+  background-color: pink;
+}
