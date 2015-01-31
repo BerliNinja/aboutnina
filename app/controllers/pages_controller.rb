@@ -1,7 +1,9 @@
 class PagesController < ApplicationController
 
-  def show
-    render params[:id]
-  end
+before_action :authenticate_user!
+
+def show
+  render params[:id]
+end
 
 end
