@@ -1,4 +1,15 @@
-.container
-  %h1 Welcome
-  .hero-unit
-    Hello, World! This is my Hero Unit
+%h2 Welcome
+%h4 This is my personal website mainly created for my applications for an internship
+
+%p Feel free to check out the CV Part and everything else you're interested in. This is the place where you can ask any question which were not answered in all the other menu points.
+
+= link_to "Neue Frage stellen", new_question_path
+
+
+
+- collection.each do |question|
+  %h4 Question
+  = question.title
+  %h4 Description
+  = question.description
+  = link_to "Frage bearbeiten", edit_question_path(question)

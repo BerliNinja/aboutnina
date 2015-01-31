@@ -1,0 +1,9 @@
+%h2 This is the right place to ask me a question
+
+= form_for @question do |q|
+  %li Question
+  = q.text_field :title
+  %li Description/Explanation
+  = q.text_area :description
+
+  = q.submit "Neue Frage speichern", :class => "btn btn-warning"
