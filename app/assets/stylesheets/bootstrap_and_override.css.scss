@@ -1,21 +1,75 @@
 @import "bootstrap";
+/* -------------------------------.catcher-------------------------------------- */
+
+div.catcher-left {
+  float: left;
+  width:400px;
+}
+.catcher-left h1 {
+  font-size: 70px;
+}
+.catcher-left h4 {
+  font-size: 20px;
+  margin-left: 50px;
+}
+
+div.catcher-right {
+  margin-right: 10px;
+  display: block;
+  float: right;
+}
+
+.catcher-right h1 {
+  font-size: 80px;
+  margin-right: -20px;
+  margin-top:10px;
+  text-align: center;
+}
+
+/* ---------------------------------------------- circles ------------------------------------------ */
+div.circle li {
+  background-color: #FF3333;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  float: left;
+  margin-left: 70px;
+  margin-right: 70px;
+  line-height: 120px;
+  text-align: center;
+  color: white;
+}
+
+div.circle li {
+   a:link,
+   a:visited,
+   a:hover,
+   a:active {
+       color:white;
+   }
+}
+
+div.indent {
+  margin-left: 140px;
+}
+
+div.text {
+  width: 780px;
+  margin-top: 140px;
+  text-align:center;
+  }
 
 /* ---------------------------------images--------------------------------------- */
 
-img {
-  width: 190px;
-  height: 120px;
-}
-
-
-.img-big img{
-  width: 1428px;
-  height: 598px;
+img.big {
+  max-width: 90%;
+  height: auto;
+  margin-top: 4%;
 }
 
 /* ---------------------------------navbar--------------------------------------- */
 .navbar-inverse {
-  background-color: #D41964;
+  background-color: #FF3333;
   color: white;
   border: none;
 }
@@ -30,21 +84,13 @@ img {
 
 /* ---------------------------------jumbotron--------------------------------------- */
 
-.jumbotron {
-  background-color: #EECCDA;
-  opacity: 0.95;
-  padding: -10px;
-}
-
-.jumbotron h2 {
-  margin-top: -20px;
-}
 
 /*-----------------------------------container------------------------------------------- */
 .container {
   padding: 0px;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 5%;
+  margin-right: 20px;
+  width: 1300px;
 }
 
 /* ---------------------------------body--------------------------------------- */
@@ -53,6 +99,9 @@ body {
   background-size: 100%;
   padding: 0;
   text-align: justify;
+  background-color: #F8F1F8;
+  margin-bottom: 60px;
+  color: #4B464B;
 
 }
 
@@ -72,19 +121,19 @@ body hr {
 /* -----------------------------Turning background pink an text white------------------------------ */
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-  background-color: pink;
+  background-color: #FF5C5C; //lightred
 }
 
 .navbar-inverse .navbar-nav > li > a {
-  color: white;
+  color: #F8F1F8;
 }
 
 .navbar-inverse .navbar-brand {
-  color: white;
+  color: #F8F1F8; // red
 }
 
 .navbar-inverse .navbar-text {
-  color: white;
+  color: #F8F1F8;
 }
 
 .navbar-nav a, .navbar-nav a:active, .navbar-nav a:visited, .navbar-nav a:hover {
@@ -92,7 +141,7 @@ body hr {
 }
 
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
-  background-color: pink;
+  background-color: #FF5C5C; //lightred
 }
 
 /* ------------------------------tables--------------------------------*/
