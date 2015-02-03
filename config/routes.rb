@@ -10,11 +10,12 @@ Rails.application.routes.draw do
   get '/hobbies' => 'pages#hobbies'
   get '/education' => 'pages#education'
   get '/skills' => 'pages#skills'
-  get '/work' => 'pages#work'
-  get '/personal' => 'pages#personal'
+  get '/more' => 'pages#more'
+  get '/resume' => 'pages#resume'
   get '/websites' => 'pages#websites'
   get '/github' => 'pages#github'
   get '/travel' => 'pages#travel'
   get '/volunteer' => 'pages#volunteer'
+  get '/imprint' => 'pages#imprint'
 
 end
