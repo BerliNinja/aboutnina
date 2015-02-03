@@ -50,14 +50,17 @@ div.circle li {
 }
 
 div.indent {
-  margin-left: 140px;
+  margin-left: 255px;
 }
 
 div.text {
   width: 780px;
-  margin-top: 140px;
-  text-align:center;
+  margin-top: 160px;
+  display: block;
   }
+div.text h4 {
+  text-align:center;
+}
 
 /* ---------------------------------images--------------------------------------- */
 
