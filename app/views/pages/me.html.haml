@@ -1,29 +1,30 @@
-.container
-  .jumbotron
-    %h1 Welcome
-    .hero-unit
-      %p Hier finden Sie alle wichtigen Informationen über mich:
-
-    %div{:align => "center"}
-      .rahmen
-        %img#bilderrahmen{:onmouseout => "wechselZurueck()", :onmouseover => "wechselHin()", :src => "/img/me/nina_1.jpg"}/
-
-:javascript
-  var bild1;
-  var bild2;
-  function vorladen()
-  {
-       bild1 = new Image();
-       bild1.src = "/img/me/nina_1.jpg";
-       bild2 = new Image();
-       bild2.src = "/img/me/nina_2.jpg";
-  }
-  function wechselHin()
-  {
-       document.getElementById("bilderrahmen").src = bild2.src;
-  }
-  function wechselZurueck()
-  {
-       document.getElementById("bilderrahmen").src = bild1.src;
-  }
-  window.onload = vorladen();
+%h1 Welcome
+%hr
+%div.info
+  %div.circle
+    %li Professional Info
+  %table
+    %tr
+      %td Name:
+      %td Nina Stache
+    %tr
+      %td Age:
+      %td 25
+    %tr
+      %td Born and Lives in:
+      %td Berlin
+    %tr
+      %td E-Mail:
+      %td NinaStache [at] gmx.de
+    %tr
+      %td Skype:
+      %td nina.stache
+    %tr
+      %td Xing:
+      %td= link_to 'xing', "https://www.xing.com/profile/Nina_Stache", target: :blank
+    %tr
+      %td Facebook:
+      %td
+    %tr
+      %td Language:
+      %td Ruby
