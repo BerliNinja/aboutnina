@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users, controllers: { registrations: :registrations }
 
-  root to: 'questions#index'
+  root to: 'pages#intern_me'
   resources :questions
 
   get '/me' => 'pages#me'
@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   get '/github' => 'pages#github'
   get '/travel' => 'pages#travel'
   get '/volunteer' => 'pages#volunteer'
-  get '/imprint' => 'pages#imprint'
+
+  get '/imprint' => 'imprints#imprint'
 
 end
