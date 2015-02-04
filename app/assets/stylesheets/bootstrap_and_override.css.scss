@@ -63,6 +63,19 @@ div.text h4 {
   text-align:center;
 }
 
+div.circle-small li {
+  background-color: #FF3333;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  float: left;
+  margin-left: 70px;
+  margin-right: 70px;
+  line-height: 80px;
+  text-align: center;
+  color: white;
+  }
+
 /* ---------------------------------images--------------------------------------- */
 
 img.big {
@@ -94,6 +107,10 @@ img.small {
 
 /* ---------------------------------jumbotron--------------------------------------- */
 
+.jumbotron {
+  background-color: #FFC2C2;
+  padding-top: 10px;
+}
 
 /*-----------------------------------container------------------------------------------- */
 .container {
@@ -161,4 +178,14 @@ thead {
 
 .table-bordered > thead > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > th, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > th, .table-bordered > tfoot > tr > td {
   border: 1px solid #d41964;
+}
+
+/* ------------------------------- new question width --------------------------- */
+
+.width-200 li {
+  width: 200px;
+}
+
+.questions {
+  text-align: center;
 }
