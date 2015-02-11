@@ -1,0 +1,9 @@
+%h2 Here you can edit your posts
+.width-200
+  = form_for @post do |p|
+    %li Post
+    = p.text_field :title
+    %li Description/Explanation
+    = p.text_area :description
+    %li
+    = p.submit "Save edited Post", :class => "btn btn-warning"

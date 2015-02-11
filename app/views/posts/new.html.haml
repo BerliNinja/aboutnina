@@ -1,0 +1,9 @@
+%h2 This is the right place to ask me a question
+.width-200
+  = form_for @post do |p|
+    %li Post Title:
+    = p.text_field :title
+    %li Description
+    = p.text_area :description
+    %li
+    = p.submit "Save new Post", :class => "btn btn-warning"

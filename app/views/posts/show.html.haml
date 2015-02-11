@@ -1,0 +1,30 @@
+- if @resource
+  %h2 Current Post
+  .jumbotron
+    %div.circle-small
+      %li Post
+      %p
+      Title:
+      = @resource.title
+      %p
+      Created:
+      = @resource.created_at
+      %p
+      Updated:
+      = @resource.updated_at
+      %p
+      = link_to "Edit Question", edit_question_path(q), :class => "btn btn-danger btn-full"
+    %hr
+    %div.circle-small
+      %li Description
+      %p
+      Description:
+      = @resource.description
+      %p
+      Created:
+      = @resource.created_at
+      %p
+      Updated:
+      = @resource.updated_at
+      %p
+      = link_to "Edit Description", edit_question_path(q), :class => "btn btn-danger btn-full"
