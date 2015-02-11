@@ -1,0 +1,45 @@
+- if @resource
+  %h2 Priorly Asked Questions
+  .jumbotron
+    %div.circle-small
+      %li Question
+      %p
+      Title:
+      = @resource.title
+      %p
+      Created:
+      = @resource.created_at
+      %p
+      Updated:
+      = @resource.updated_at
+      %p
+      = link_to "Edit Question", edit_question_path(q), :class => "btn btn-danger btn-full"
+    %hr
+    %div.circle-small
+      %li Description
+      %p
+      Description:
+      = @resource.description
+      %p
+      Created:
+      = @resource.created_at
+      %p
+      Updated:
+      = @resource.updated_at
+      %p
+      = link_to "Edit Description", edit_question_path(q), :class => "btn btn-danger btn-full"
+
+    %hr
+    %div.circle-small
+      %li Answer
+      Answer:
+      =@resource.answer
+      %p
+      Created:
+      = @resource.created_at
+      %p
+      Updated:
+      = @resource.updated_at
+      %p
+    - if current_user.email="dazwiebel@web.de"
+      = link_to "Answer Question", edit_question_path(q), :class => "btn btn-full btn-danger"

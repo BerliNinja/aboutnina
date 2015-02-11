@@ -1,0 +1,12 @@
+%h2 Here you can edit your questions
+.width-200
+  = form_for @question do |q|
+    %li Question
+    = q.text_field :title
+    %li Description/Explanation
+    = q.text_area :description
+    - if current_user.email="dazwiebel@web.de" && current_user
+      %li Answer
+      =q.text_area :answer
+    %li
+    = q.submit "Save edited question", :class => "btn btn-warning"

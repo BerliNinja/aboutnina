@@ -11,11 +11,42 @@
       %div.circle-small
         %li Question
         %p
+        Title:
         = q.title
         %p
+        Created:
         = q.created_at
+        %p
+        Updated:
+        = q.updated_at
+        %p
+        = link_to "Edit Question", edit_question_path(q), :class => "btn btn-danger btn-full"
+      %hr
       %div.circle-small
         %li Description
+        %p
+        Description:
         = q.description
-      %li
-        = link_to "Edit Question", edit_question_path(:id), :class => "btn btn-danger"
+        %p
+        Created:
+        = q.created_at
+        %p
+        Updated:
+        = q.updated_at
+        %p
+        = link_to "Edit Description", edit_question_path(q), :class => "btn btn-danger btn-full"
+
+      %hr
+      %div.circle-small
+        %li Answer
+        Answer:
+        =q.answer
+        %p
+        Created:
+        = q.created_at
+        %p
+        Updated:
+        = q.updated_at
+        %p
+      - if current_user.email="dazwiebel@web.de"
+        = link_to "Answer Question", edit_question_path(q), :class => "btn btn-full btn-danger"
