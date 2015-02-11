@@ -1,5 +1,10 @@
 class QuestionsController < ApplicationController
   before_action :authenticate_user!, :except => [:index, :show]
+  helper_method :collection, :resource
+
+def index
+  @questions = Question.order("updated_at ASC")
+end
 
 def new
   @question = Question.new
@@ -9,10 +14,15 @@ def show
   @question = Question.find(params[:id])
 end
 
-def update
+def edit
+  @question = Question.find(params[:id])
+  @question.save!
 end
 
-def edit
+def update
+  @question = Question.find(params[:id])
+  @question.update!(permitted_params)
+  render :show
 end
 
 def create
@@ -24,15 +34,20 @@ def create
   end
 end
 
-private
+protected
 
 def permitted_params
-  params.require(:question).permit(:title, :description, :timestamp)
+  params.require(:question).permit(:title, :description, :timestamp, :answer)
 end
+
+# def question_creation_params
+#   permitted_params.merge({
+#     user_id: current_user.id
+#   })
+# end
 
 def collection
   @question ||= Question.all
 end
 
-  helper_method :collection, :resource
 end
