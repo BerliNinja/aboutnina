@@ -48,5 +48,6 @@
         Updated:
         = q.updated_at
         %p
-      - if current_user.email="dazwiebel@web.de"
-        = link_to "Answer Question", edit_question_path(q), :class => "btn btn-full btn-danger"
+      - if current_user
+        - if current_user.email="dazwiebel@web.de"
+          = link_to "Answer Question", edit_question_path(q), :class => "btn btn-full btn-danger"
