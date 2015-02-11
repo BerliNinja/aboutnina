@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   root to: 'pages#intern_me'
   resources :questions
+  resources :posts
 
   get '/me' => 'pages#me'
   get '/mycode' => 'pages#mycode'
