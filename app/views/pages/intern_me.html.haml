@@ -1,25 +1,29 @@
 %div.catcher-left
   %h1 Nina Stache
   %h4 Apprentice Web-Development
-  %img.big.img-circle{:src => "/img/me/nina.jpg", :style => "display:block;"}/
+  %img.big.img-circle{:src => "/img/me/nina2.jpg", :style => "display:block;"}/
 
 %div.catcher-right
   %h1 INTERNSHIP ME!
-  %div.circle
+  %div.circle.red
     %li= link_to 'My Resume', resume_path
-  %div.circle
+  %div.circle.yellow
     %li= link_to 'My Work', mycode_path
-  %div.circle
+  %div.circle.green
     %li= link_to 'My Skills', skills_path
 
   %div.text
+    / %img.border{:src => "/img/border.jpg"}
     %h4 Personal Statement
     %p I am an apprentice in application development with 1.5 years of experience looking for an internship abroad as a software developer for up to four months.
 
     %p Ruby and Ruby on Rails were a great start for to learn to code and I was lucky to take part in a RailsGirls workshop and visited a ruby conference in Lyon (RuLu) already. That is why I want to deepen my Ruby and RoR skills in a company working with RoR as well as to exchange knowledge and experiences. As I am relatively new to programming I am used to motivate myself, working with new topics and learning a lot within a short time.
     %p I contribute to improve my companies websites by solving front- and backend tasks, including database handling, implementation of front end changes using mainly HAML and SASS, writing migration scripts and much more. I was able to acquire a good understanding of the MVC and how an Rails application functions. In my spare time I try to improve my coding skills as well, recently I started to work on this personal website and try to implement other little projects.
 
-    = link_to "Read More...", more_path
+    %li
+      = link_to "Read More...", more_path
+
+    / %img.border{:src => "/img/border.jpg"}
 
   %li
     = link_to 'New Question', new_question_path

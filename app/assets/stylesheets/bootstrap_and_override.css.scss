@@ -3,10 +3,10 @@
 
 div.catcher-left {
   float: left;
-  width:400px;
+  width:30%;
 }
 .catcher-left h1 {
-  font-size: 70px;
+  font-size: 65px;
 }
 .catcher-left h4 {
   font-size: 20px;
@@ -56,7 +56,7 @@ div.indent {
 
 div.text {
   width: 780px;
-  margin-top: 160px;
+  margin-top: 180px;
   display: block;
   }
 div.text h4 {
@@ -77,13 +77,24 @@ div.circle-small li {
   }
   .circle-small {
   height: 80%;
+  }
 
+  div.circle.green li {
+  background-color: #255D55;
+  }
+
+  div.circle.yellow li {
+  background-color: #19B8A4;
+  }
+
+  div.circle.red li {
+  background-color: #4BCCC4;
   }
 
 /* ---------------------------------images--------------------------------------- */
 
 img.big {
-  max-width: 90%;
+  max-width: 95%;
   height: auto;
   margin-top: 4%;
 }
@@ -94,9 +105,13 @@ img.small {
   float: left;
 }
 
+img.border {
+  height: 122px;
+  width: auto;
+}
 /* ---------------------------------navbar--------------------------------------- */
 .navbar-inverse {
-  background-color: #FF3333;
+  background-color: #303030;
   color: white;
   border: none;
 }
@@ -130,10 +145,14 @@ body {
   background-size: 100%;
   padding: 0;
   text-align: justify;
-  background-color: #F8F1F8;
+  background-color: white;
   margin-bottom: 60px;
   color: #4B464B;
+  font-family: 'Ubuntu', sans-serif;
+}
 
+body h1,h2,h3,h4,h5,h6 {
+  font-weight: bold;
 }
 
 body li {
@@ -152,27 +171,36 @@ body hr {
 /* -----------------------------Turning background pink an text white------------------------------ */
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-  background-color: #FF5C5C; //lightred
+  background-color: grey;
 }
 
 .navbar-inverse .navbar-nav > li > a {
-  color: #F8F1F8;
+  color: white;
 }
 
 .navbar-inverse .navbar-brand {
-  color: #F8F1F8; // red
+  color: white; // red
 }
 
 .navbar-inverse .navbar-text {
-  color: #F8F1F8;
+  color: white;
 }
 
 .navbar-nav a, .navbar-nav a:active, .navbar-nav a:visited, .navbar-nav a:hover {
-  color: grey;
+  color: white;
 }
 
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
-  background-color: #FF5C5C; //lightred
+  background-color: #FF5C5C;
+}
+
+.nav.navbar-nav.navbar-right.righter {
+  margin-right: -190px;
+  margin-top: 14px;
+}
+
+p.navbar-text.lefter {
+  margin-left: -70px;
 }
 
 /* ------------------------------tables--------------------------------*/
