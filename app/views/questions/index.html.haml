@@ -1,5 +1,6 @@
 .questions
-  %h2 Questions --UNDER CONSTRUCTION--
+  %h2 Questions
+  %img.border{:src => "/img/border.jpg"}
   %h4 You are very welcome to ask me a question
   %h4 ↓↓↓↓↓↓↓↓↓↓↓↓↓
   %li
@@ -7,47 +8,48 @@
 
   %h2 Priorly Asked Questions
   - collection.each do |q|
-    .jumbotron
-      %div.circle-small
-        %li Question
-        %p
-        Title:
-        = q.title
-        %p
-        Created:
-        = q.created_at
-        %p
-        Updated:
-        = q.updated_at
-        %p
-        = link_to "Edit Question", edit_question_path(q), :class => "btn btn-danger btn-full"
-      %hr
-      %div.circle-small
-        %li Description
-        %p
-        Description:
-        = q.description
-        %p
-        Created:
-        = q.created_at
-        %p
-        Updated:
-        = q.updated_at
-        %p
-        = link_to "Edit Description", edit_question_path(q), :class => "btn btn-danger btn-full"
+    %img.border{:src => "/img/border.jpg"}
+    %div.circle-small
+      %li Question
+      %p
+      Title:
+      = q.title
+      %p
+      Created:
+      = q.created_at
+      %p
+      Updated:
+      = q.updated_at
+      %p
+      = link_to "Edit Question", edit_question_path(q), :class => "btn btn-danger btn-full"
 
-      %hr
-      %div.circle-small
-        %li Answer
-        Answer:
-        =q.answer
-        %p
-        Created:
-        = q.created_at
-        %p
-        Updated:
-        = q.updated_at
-        %p
-      - if current_user
-        - if current_user.email="ninastache@gmx.de"
+    %div.circle-small
+      %li Description
+      %p
+      Description:
+      = q.description
+      %p
+      Created:
+      = q.created_at
+      %p
+      Updated:
+      = q.updated_at
+      %p
+      = link_to "Edit Description", edit_question_path(q), :class => "btn btn-danger btn-full"
+
+    %div.circle-small
+      %li Answer
+      Answer:
+      =q.answer
+      %p
+      Created:
+      = q.created_at
+      %p
+      Updated:
+      = q.updated_at
+      %p
+    - if current_user
+      - if current_user.email="ninastache@gmx.de"
+        %li
           = link_to "Answer Question", edit_question_path(q), :class => "btn btn-full btn-danger"
+      %img.border{:src => "/img/border.jpg"}
