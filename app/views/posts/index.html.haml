@@ -6,13 +6,16 @@
     %div
       %h2 Title:
       = p.title
-      %h5 Created:
-      = p.created_at
-      %h5 Updated:
-      = p.updated_at
-    %hr
+
     %div
       %h2 Description:
       = p.description
+
+      %p
+      Created:
+      = p.created_at
+      Updated:
+      = p.updated_at
+
       %p
       = link_to "Edit Post", edit_post_path(p), :class => "btn btn-danger btn-full"

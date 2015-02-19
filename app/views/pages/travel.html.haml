@@ -1,35 +1,65 @@
-%h1 Travelling
-%h2 Places I've been to
-%ul
-  %li{"data-thumb" => "/img/lightbox/bratislava.jpg"}
-    %img.small{:src => "/img/lightbox/bratislava.jpg"}/
-  %li{"data-thumb" => "/img/lightbox/brussels.jpg"}
-    %img.small{:src => "/img/lightbox/brussels.jpg"}/
-  %li{"data-thumb" => "/img/lightbox/budapest.jpg"}
-    %img.small{:src => "/img/lightbox/budapest.jpg"}/
-  %li{"data-thumb" => "/img/lightbox/bucarest.jpg"}
-    %img.small{:src => "/img/lightbox/bucarest.jpg"}/
-  %li{"data-thumb" => "/img/lightbox/istanbul.jpg"}
-    %img.small{:src => "/img/lightbox/istanbul.jpg"}/
-  %li{"data-thumb" => "/img/lightbox/marseille.jpg"}
-    %img.small{:src => "/img/lightbox/marseille.jpg"}/
-  %li{"data-thumb" => "/img/lightbox/oslo.jpg"}
-    %img.small{:src => "/img/lightbox/oslo.jpg"}/
-  %li{"data-thumb" => "/img/lightbox/singapore.jpg"}
-    %img.small{:src => "/img/lightbox/singapore.jpg"}/
-  %li{"data-thumb" => "/img/lightbox/swiss.jpg"}
-    %img.small{:src => "/img/lightbox/swiss.jpg"}/
-  %li{"data-thumb" => "/img/lightbox/tandem.jpg"}
-    %img.small{:src => "/img/lightbox/tandem.jpg"}/
-  %li{"data-thumb" => "/img/lightbox/warsaw.jpg"}
-    %img.small{:src => "/img/lightbox/warsaw.jpg"}/
-  %li{"data-thumb" => "/img/lightbox/warsaw.jpg"}
-    %img.small{:src => "/img/lightbox/warsaw.jpg"}/
+/ %h1 Travelling
+/ %h2 Places I've been to
+/ %ul
+/   %li{"data-thumb" => "/img/lightbox/bratislava.jpg"}
+/     %img.small{:src => "/img/lightbox/bratislava.jpg"}/
+/   %li{"data-thumb" => "/img/lightbox/brussels.jpg"}
+/     %img.small{:src => "/img/lightbox/brussels.jpg"}/
+/   %li{"data-thumb" => "/img/lightbox/budapest.jpg"}
+/     %img.small{:src => "/img/lightbox/budapest.jpg"}/
+/   %li{"data-thumb" => "/img/lightbox/bucarest.jpg"}
+/     %img.small{:src => "/img/lightbox/bucarest.jpg"}/
+/   %li{"data-thumb" => "/img/lightbox/istanbul.jpg"}
+/     %img.small{:src => "/img/lightbox/istanbul.jpg"}/
+/   %li{"data-thumb" => "/img/lightbox/marseille.jpg"}
+/     %img.small{:src => "/img/lightbox/marseille.jpg"}/
+/   %li{"data-thumb" => "/img/lightbox/oslo.jpg"}
+/     %img.small{:src => "/img/lightbox/oslo.jpg"}/
+/   %li{"data-thumb" => "/img/lightbox/singapore.jpg"}
+/     %img.small{:src => "/img/lightbox/singapore.jpg"}/
+/   %li{"data-thumb" => "/img/lightbox/swiss.jpg"}
+/     %img.small{:src => "/img/lightbox/swiss.jpg"}/
+/   %li{"data-thumb" => "/img/lightbox/tandem.jpg"}
+/     %img.small{:src => "/img/lightbox/tandem.jpg"}/
+/   %li{"data-thumb" => "/img/lightbox/warsaw.jpg"}
+/     %img.small{:src => "/img/lightbox/warsaw.jpg"}/
+/   %li{"data-thumb" => "/img/lightbox/warsaw.jpg"}
+/     %img.small{:src => "/img/lightbox/warsaw.jpg"}/
 
-:javascript
-  $(window).load(function() {
-    $('.flexslider').flexslider({
-      animation: "slide",
-      controlNav: "thumbnails"
-    });
-  });
+.accordian
+  %ul
+    %li
+      .image_title
+        %a{:href => "#"} KungFu Panda
+      %a{:href => "#"}
+        %img{:src => "/img/lightbox/marseille.jpg"}/
+    %li
+      .image_title
+        %a{:href => "#"} Toy Story 2
+      %a{:href => "#"}
+        %img{:src => "/img/lightbox/tandem.jpg"}/
+    %li
+      .image_title
+        %a{:href => "#"} Wall-E
+      %a{:href => "#"}
+        %img{:src => "/img/lightbox/warsaw.jpg"}/
+    %li
+      .image_title
+        %a{:href => "#"} Up
+      %a{:href => "#"}
+        %img{:src => "/img/lightbox/oslo.jpg"}/
+    %li
+      .image_title
+        %a{:href => "#"} Up
+      %a{:href => "#"}
+        %img{:src => "/img/lightbox/istanbul.jpg"}/
+    %li
+      .image_title
+        %a{:href => "#"} Up
+      %a{:href => "#"}
+        %img{:src => "/img/lightbox/bratislava.jpg"}/
+    %li
+      .image_title
+        %a{:href => "#"} Cars 2
+      %a{:href => "#"}
+        %img{:src => "/img/lightbox/swiss.jpg"}/

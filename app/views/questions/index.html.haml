@@ -8,48 +8,37 @@
 
   %h2 Priorly Asked Questions
   - collection.each do |q|
-    %img.border{:src => "/img/border.jpg"}
-    %div.circle-small
-      %li Question
-      %p
-      Title:
-      = q.title
+    .jumbotron
+      %h3 Question
+      %h4
+        Title:
+        = q.title
       %p
       Created:
       = q.created_at
-      %p
       Updated:
       = q.updated_at
       %p
       = link_to "Edit Question", edit_question_path(q), :class => "btn btn-danger btn-full"
 
-    %div.circle-small
-      %li Description
-      %p
-      Description:
-      = q.description
-      %p
-      Created:
-      = q.created_at
-      %p
-      Updated:
-      = q.updated_at
+      %h3 Description
+      %h5
+        Description:
+        = q.description
       %p
       = link_to "Edit Description", edit_question_path(q), :class => "btn btn-danger btn-full"
 
-    %div.circle-small
-      %li Answer
-      Answer:
-      =q.answer
+      %h3 Answer
+      %h4
+        Answer:
+        = q.answer
       %p
       Created:
       = q.created_at
-      %p
       Updated:
       = q.updated_at
       %p
-    - if current_user
-      - if current_user.email="ninastache@gmx.de"
-        %li
-          = link_to "Answer Question", edit_question_path(q), :class => "btn btn-full btn-danger"
-      %img.border{:src => "/img/border.jpg"}
+      - if current_user
+        - if current_user.email="ninastache@gmx.de"
+          %li
+            = link_to "Answer Question", edit_question_path(q), :class => "btn btn-full btn-danger"
