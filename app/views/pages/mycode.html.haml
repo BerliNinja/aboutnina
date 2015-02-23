@@ -1,24 +1,26 @@
-%h2 My Coding Experience
-%img.border{:src => "/img/border.jpg"}
-%div.info
-  %div.circle.yellow
-    %li Working
-  %h4 Working @ Absolventa
-  %p During weekdays I work at Absolventa where I contribute to the development of following websites:
-  %ul
-    %li
-      = link_to 'Absolventa', 'www.absolventa.de'
-    %li
-      = link_to 'Praktikum-Info', 'www.praktikum.info'
-    %li
-      = link_to 'Trainee-Geflüster', 'www.trainee-gefluester.de'
-    %li
-      = link_to 'Jobmesse-Radar', 'www.jobmesse-radar.de'
-%img.border{:src => "/img/border.jpg"}
-%div.indent
-%div.info
-  %div.circle.yellow
-    %li Developing
-  %h4 Developing in my free time
-  %p In my spare time I try to work on my own projects as often as I can. Feel free to visit my GitHub account:
-  = link_to 'Nina bei GitHub', 'https://github.com/BerliNinja', target: 'blank'
+.row
+  %h2.text-center MY EXPERIENCE
+  .row
+    .col-md-2
+      %div.circle.yellow
+        %li Working
+    .col-md-10
+      %h4 Working @ Absolventa
+      %p During weekdays I work at Absolventa where I contribute to the development of following websites:
+      %ul
+        %li
+          = link_to 'Absolventa', 'http://www.absolventa.de'
+        %li
+          = link_to 'Praktikum-Info', 'http://www.praktikum.info'
+        %li
+          = link_to 'Trainee-Geflüster', 'http://www.trainee-gefluester.de'
+        %li
+          = link_to 'Jobmesse-Radar', 'http://www.jobmesse-radar.de'
+  .row
+    .col-md-2
+      %div.circle.yellow
+        %li Developing
+    .col-md-10
+      %h4 Developing in my free time
+      %p In my spare time I try to work on my own projects as often as I can. Feel free to visit my GitHub account:
+      = link_to 'Nina bei GitHub', 'https://github.com/BerliNinja', target: 'blank'

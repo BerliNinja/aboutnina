@@ -1,50 +1,291 @@
-%div.catcher-left
-  %h1 Nina Stache
-  %h4 Apprentice Web-Development
-  %img.big.img-circle{:src => "/img/me/nina2.jpg", :style => "display:block;"}/
+.row
+  .col-xs-4.text-center
+    %h1 NINA STACHE
+    %h4 Apprentice Web-Development
+    %img.big.img-circle{:src => "/img/me/nina2.jpg", :style => "display:block;"}/
 
-%div.catcher-right
-  %h1 INTERNSHIP ME!
-  %div.circle.red
-    %li= link_to 'My Resume', resume_path
-  %div.circle.yellow
-    %li= link_to 'My Work', mycode_path
-  %div.circle.green
-    %li= link_to 'My Skills', skills_path
+  .col-xs-7.col-xs-offset-1
+    .row.links
+      %h1.text-center INTERNSHIP ME!
+    .row
+      .col-xs-3.col-xs-offset-1.circle.red
+        %li= link_to 'My Resume', '#information'
+      .col-xs-3.col-xs-offset-1.circle.yellow
+        %li= link_to 'My Experience', '#work'
+      .col-xs-3.col-xs-offset-1.circle.green
+        %li= link_to 'My Skills', '#skills'
+    .row
 
-  %div.text
+    / %h4.text-center Personal Statement
+    / %img.border{:src => "/img/border.jpg"}
+    / %p I am an apprentice in Application Development interested in an internship abroad as a Software Developer for up to four months.
 
-    %h4 Personal Statement
-    %img.border{:src => "/img/border.jpg"}
-    %p I am an apprentice in application development with 1.5 years of experience looking for an internship abroad as a software developer for up to four months.
+    / %p Ruby and Ruby on Rails was a great start for me to learn to code and I was lucky to take part in a RailsGirls workshop and visited a ruby conference in Lyon (RuLu) already. That is why I want to deepen my Ruby and RoR skills in a company working with RoR as well as to exchange knowledge and experiences. I am used to motivating myself, working with new topics and learning a lot within a short time.
+    / %p I contribute to improve my companies official websites by solving front- and backend tasks, including database handling, implementation of front end changes using mainly HAML and SASS, writing migration scripts and much more. I was able to acquire a good understanding of the MVC and how a Rails application functions. In my spare time I try to improve my coding skills as well- recently I started to work on this personal website and try to implement other little projects.
 
-    %p Ruby and Ruby on Rails were a great start for to learn to code and I was lucky to take part in a RailsGirls workshop and visited a ruby conference in Lyon (RuLu) already. That is why I want to deepen my Ruby and RoR skills in a company working with RoR as well as to exchange knowledge and experiences. I am used to motivate myself, working with new topics and learning a lot within a short time.
-    %p I contribute to improve my companies websites by solving front- and backend tasks, including database handling, implementation of front end changes using mainly HAML and SASS, writing migration scripts and much more. I was able to acquire a good understanding of the MVC and how an Rails application functions. In my spare time I try to improve my coding skills as well, recently I started to work on this personal website and try to implement other little projects.
+    %blockquote
+      %p I want to be an intern in your company for three months and deepen my Ruby on Rails skills. I am eager to learn as quickly as possible and can start flexibly beginning from July 2015.
+
+      %footer
+        Nina Stache
+        %cite{:title => "Source Title"} 23/02/2015
+    %blockquote
+      %p I am an apprentice in web development working with Ruby on Rails, Ruby, haml, sass, javascript, postgresql, rspec and many more. I have hands-on knowledge of all these for a little over one year.
+
+      %footer
+        Nina Stache
+        %cite{:title => "Source Title"} 23/02/2015
+
 
     %li
       = link_to "Read More...", more_path
+.light-blue
+  #information.section
+    .row
+      %h1.text-center RESUME
+      .col-xs-2
+        %div.circle.yellow
+          %li
+            = link_to ('Professional Info'), resume_path
+      .col-xs-10
+        %ul.list-inline
+          %li.btn.btn-lg.btn-danger Nina Juliane Stache
+          %li.btn.btn-lg.btn-info 25
+          %li.btn.btn-lg.btn-primary Berlin/Germany
+          %li.btn.btn-lg.btn-success NinaStache[at]gmx.de
+          %li.btn.btn-lg.btn-warning
+            = link_to 'xing', "https://www.xing.com/profile/Nina_Stache", target: :blank
+        / %table
+        /   %tr
+        /     %td Name:
+        /     %td Nina Stache
+        /   %tr
+        /     %td Age:
+        /     %td 25
+        /   %tr
+        /     %td Born and Lives in:
+        /     %td Berlin
+        /   %tr
+        /     %td E-Mail:
+        /     %td NinaStache [at] gmx.de
+        /   %tr
+        /     %td Skype:
+        /     %td nina.stache
+        /   %tr
+        /     %td Xing:
+        /     %td= link_to 'xing', "https://www.xing.com/profile/Nina_Stache", target: :blank
+        /   %tr
+        /     %td Language:
+        /     %td Ruby
 
-  %li
-    = link_to 'Ask me a question!', new_question_path, class: "btn btn-info"
+  #information.section
+    .row
+      .col-xs-2
+        %div.circle.yellow
+          %li
+            = link_to ('Work Experience'), resume_path
+      .col-xs-10
+
+        %h4
+          Dec 2012 - Jul 2013
+        %h5
+          Student Employee Engineering Performance Office
+        %h5
+          Company: Bombardier Transportation, Hennigsdorf (Germany)
+        %p Worked on complex projects such as:Generic Work Packages
+        %p Reorganization of Organizational Charts
+        %p Support of the Head of Engineering Performance Office
+        %p Research and implementation of project management software
+
+        %br
+        %h4
+          Apr 2014 – Present
+        %h5
+          Apprentice IT Specialist, Application Development
+        %h5
+          Company: Absolventa - Employment Website, Berlin (Germany) Developing our main application which includes:
+        %p Solving front-end tasks with HTML and CSS
+        %p Backend development with Ruby and Ruby on Rails(currently version 4.1)
+        %p Implementation of UX optimised changes
+        %p Developing internal web application
+        %p Writing and reviewing code
+        %p Writing migration scripts and pushing changes
+
+        %br
+        %h4
+          Aug 2013 – Mar 2014
+        %h5
+          Apprentice IT Specialist, Application Development
+        %h5
+          Company: DEMOS Gesellschaft für E-Partizipation, Berlin (Germany)
+        %p Introduction into electrical engineering
+        %p HTML and CSS
+        %p Build LaTeX templates
+
+        %br
+        %h4
+          Aug 2009 – Oct 2009
+        %h5
+          Intern
+        %h5
+          Company: Senate administration for urban development, Berlin (Germany)
+        %p Maintenance of database
+        %p Participation and recording during meeting
 
 
 
+  #information.section
+    .row
+      .col-xs-2
+        %div.circle.yellow
+          %li
+            = link_to ('Education'), resume_path
+      .col-xs-10
+        %h4
+          Aug 2013– Jul 2016
+        %h5
+          IT Specialist, Application Development EQF level 5
+        Berlin College of Further Education for Information Technology and Medical Equipment Technology, Berlin (Germany)
+        %h5 General
+        %p Economic and Social Studies
+        %p Business Economics
+        %h5 Occupational
+        %p Technical English
+        %p Applicationdevelopment
+        %p IT-Systems
+        %p Linux
 
+        %br
+        %h4
+          Oct 2009 – Jul 2013
+        %h5
+          Bachelor of Science in Urban Planning
+        Technical University Berlin, Berlin (Germany)
 
+        %h4
+          Aug 2007 - Jul 2009
+        %h5
+          Higher education entrance qualification (A-levels)
+        Rosa-Luxemburg-Gymnasium Berlin
 
+        %h4
+          Aug 2006 - Jul 2007
+        %h5
+          High-School-Year
+        V Lyceum Ogolnoksztalcacy Dabrowa Gornicza
+.green-blue
+  #experience.section
+    .row
+      %h2.text-center MY EXPERIENCE
+      .col-xs-2
+        %div.circle.red
+          %li Working
+      .col-xs-10
+        %h4 Working @ Absolventa
+        %p During weekdays I work at Absolventa where I contribute to the development of following websites:
+        %ul
+          %li
+            = link_to 'Absolventa', 'http://www.absolventa.de', target: 'blank'
+          %li
+            = link_to 'Praktikum-Info', 'http://www.praktikum.info', target: 'blank'
+          %li
+            = link_to 'Trainee-Geflüster', 'http://www.trainee-gefluester.de', target: 'blank'
+          %li
+            = link_to 'Jobmesse-Radar', 'http://www.jobmesse-radar.de', target: 'blank'
+    .row
+      .col-xs-2
+        %div.circle.red
+          %li Developing
+      .col-xs-10
+        %h4 Developing in my free time
+        %p In my spare time I try to work on my own projects as often as I can. Feel free to visit my GitHub account:
+        = link_to 'Nina bei GitHub', 'https://github.com/BerliNinja', target: 'blank'
+        %p I regularly attend meetups like the Ruby-Learners Meetup @ Fairmondo:
+        = link_to 'Ruby Co-Learning', 'http://www.meetup.com/opentechschool-berlin/events/219754230/', target: 'blank'
+        %p I visited a Rails-Girls-Event
+        = link_to 'Rails Girls Berlin', 'http://railsgirlsberlin.de/', target: 'blank'
+        %p And I went to a Ruby Conference, namely the RuLu conference in Lyon in May 2014
+        = link_to 'My blogpost about the ruby-conference', 'http://stayinginberlin.blogspot.de/2014_06_01_archive.html', target: 'blank'
 
+#skills.section
+  .row
+    %h2.text-center PERSONAL SKILLS
 
+    %table.table.table-bordered.table-striped.table
+      %thead
+        %tr
+          %th Language
+          %th Understanding
+          %th Reading
+          %th Writing
 
+      %tbody
+        %tr.success
+          %td English
+          %td C1
+          %td B2
+          %td B2
+        %tr.warning
+          %td German
+          %td mothertongue
+          %td mothertongue
+          %td mothertongue
+        %tr.danger
+          %td Polish
+          %td B2
+          %td B2
+          %td B1
+        %tr.info
+          %td French
+          %td A2
+          %td A1
+          %td A1
+  .dark
+    .row
+      %h4 Communication Skills
+      %p
+        Excellent organizational and communicational skills gained through volunteer work with pupils for a students exchange organization (YFU-Germany) for 8 years.
+        This includes the organization, thematic preparation and implementation of three to five workshops per day, being responsible for 50 adolescents and sleepless nights spending with debriefings and the organization for the next day.
 
+    .row
+      %h4 Occupational Skills
+      %ul
+        %li Good command of office suite
+        %li Experience with unix command-line tools
+        %li HTML5, HAML, CSS3, SASS, javascript
+        %li Basic understanding of relational databases
+        %li Ruby on Rails
+        %li Ruby
+        %li Basic knowledge of C#
+        %li Experience using git for source-control
+        %li Experience with SCRUM methodology
+        %li TDD
 
+#statement.section
+.row
+  %h2 PERSONAL STATEMENT
+  %p
+  I am a 25 years old apprentice in Application Development interested in an internship abroad as a Software Developer for up to four months.
+  Until two years ago I had no experience in coding at all (please don't stop reading now) but after finishing my Bachelor’s degree in Urban Planning in 2013 I knew I wanted to go for something completely new, something extremely challenging and exciting. I decided: if I want to start all over I don't want to go to University again but rather learn everything I need hands-on in a company environment.
+  %p
+  That is why in 2013 I began an apprenticeship which includes full-time employment in a company (in my case it is Absolventa http://www.absolventa.de/) and attending vocational school every three to five weeks for a whole week. Until now I don't regret my decision at all but I am quite aware of how much I have to learn. That is why I would love to get the opportunity to broaden my knowledge in another company and getting to know other procedures and working in another cultural environment.
+  %p
+  When I applied for my apprenticeship I was lucky to come upon Absolventa, the company that decided to hire me even though I had no further experience in coding, but who were willing to support a young woman to enter the big world of web development. Ruby and Ruby on Rails was a great start for me to learn to code and I was lucky to take part in a RailsGirls workshop and visited a ruby conference in Lyon (RuLu) already. That is why I want to deepen my Ruby and RoR skills in a company working with RoR as well as to exchange knowledge and experiences. I am used to motivating myself, working with new topics and learning a lot within a short time.
+  %p
+  So far I contribute to improving my companies official websites by solving front- and backend tasks, including database handling, implementation of front end changes using mainly HAML and SASS, writing migration scripts and much more. I was able to acquire a good understanding of the MVC and how a Rails application functions. In my spare time I try to improve my coding skills as well - recently I started working on a personal website and am trying to implement other little projects. From time to time I go to meet-ups listening to talks about related topics. So far I haven’t specialized in a subject as our development team is quite small and I have a broad range of tasks to work on, which is why I have no specific preferences what to work on exactly but I do want to gain a deeper insight into a specific field.
 
-
-
-
-
-
-
-
+.row
+  .col-xs-11.col-xs-offset-1
+    %p
+    %div.circle.red.col-xs-4
+      %li= link_to 'My Resume', resume_path
+    %div.circle.yellow.col-xs-4
+      %li= link_to 'My Work', mycode_path
+    %div.circle.green.col-xs-4
+      %li= link_to 'My Skills', skills_path
+  .row
+    .row
+      .row
 / %h2 Welcome
 / %h4 This is my personal website mainly created for my applications for an internship
 

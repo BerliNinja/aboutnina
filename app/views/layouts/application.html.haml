@@ -6,30 +6,33 @@
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
     %link{:href => "//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css", :rel => "stylesheet"}/
+    %link{:href => "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css", :rel => "stylesheet"}/
     %link{:href => "http://fonts.googleapis.com/css?family=Ubuntu:400,700", :rel => "stylesheet", :type => "text/css"}/
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
     %script{:src => "js/jquery-1.11.0.min.js"}
-    %script{:src => "js/lightbox.min.js"}
     = favicon_link_tag '/img/favicon.ico'
   %body
-    %nav.navbar.navbar-inverse{:role => "navigation"}
-      .container-fluid
+    %nav.navbar.navbar-inverse.navbar-fixed-top{:role => "navigation"}
+      .container
         .navbar-header
           %button.navbar-toggle.collapsed{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
             %span.sr-only Toggle navigation
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
-          %a.navbar-brand{:href => "#"} [aboutnina]
+          %a.navbar-brand.green{:href => "root_path"} [aboutnina]
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           %ul.nav.navbar-nav
-            %li.active
+            %li.current
               = link_to ('Home'), root_path
             %li
-              = link_to ('Resume'), resume_path
+              %a{:href => "#information"} Work and Education
             %li
-              = link_to ('Work'), mycode_path
+              %a{:href => "#experience"} Experience
             %li
-              = link_to ('Skills'), skills_path
+              %a{:href => "#skills"} Skills
+            %li
+              %a{:href => "#statement"} Personal Statement
             %li
               = link_to ('Questions'), questions_path
             %li
@@ -76,7 +79,7 @@
     .navbar.navbar-inverse.navbar-fixed-bottom
       .container
         %p.navbar-text.lefter Site Built By Nina
-        .nav.navbar-nav.navbar-right.righter
+        %p.navbar-text.pull-right
           %a{:href => "https://github.com/BerliNinja", target: :blank } Link To GitHub
 
 :javascript
@@ -87,3 +90,12 @@
 
   ga('create', 'UA-59171052-1', 'auto');
   ga('send', 'pageview');
+
+:javascript
+  // <![CDATA[
+  $('.navbar').onePageNav({
+           currentClass: 'active',
+           changeHash: true,
+           scrollSpeed: 1200
+           });
+  // ]]>

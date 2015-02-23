@@ -10,37 +10,32 @@ div.catcher-left {
 }
 .catcher-left h4 {
   font-size: 20px;
-  margin-left: 50px;
 }
 
 div.catcher-right {
-  margin-right: 10px;
   display: block;
   float: right;
 }
 
 .catcher-right h1 {
   font-size: 80px;
-  margin-right: -20px;
   margin-top:10px;
   text-align: center;
 }
 
 /* ---------------------------------------------- circles ------------------------------------------ */
-div.circle li {
+.circle li {
   background-color: #FF3333;
   height: 120px;
   width: 120px;
   border-radius: 50%;
   float: left;
-  margin-left: 70px;
-  margin-right: 70px;
   line-height: 120px;
   text-align: center;
   color: white;
 }
 
-div.circle li {
+.circle li {
    a:link,
    a:visited,
    a:hover,
@@ -49,28 +44,12 @@ div.circle li {
    }
 }
 
-div.indent {
-  margin-left: 255px;
-  margin-top:30px;
-}
-
-div.text {
-  width: 780px;
-  margin-top: 180px;
-  display: block;
-  }
-div.text h4 {
-  text-align:center;
-}
-
-div.circle-small li {
+.circle-small li {
   background-color: #19B8A4;
   height: 80px;
   width: 80px;
   border-radius: 50%;
   float: left;
-  margin-left: 70px;
-  margin-right: 70px;
   line-height: 80px;
   text-align: center;
   color: white;
@@ -79,26 +58,22 @@ div.circle-small li {
   height: 80%;
   }
 
-  div.circle.green li {
+  .circle.green li {
   background-color: #255D55;
   }
 
-  div.circle.yellow li {
-  background-color: #19B8A4;
+  .circle.yellow li {
+  background-color: #303030; //dark grey
   }
 
-  div.circle.red li {
-  background-color: #4BCCC4;
+  .circle.red li {
+  background-color: #4BCCC4; //türkis
   }
 
-  div.info table td {
+  table td {
   padding-right: 40px;
   }
 
-  div.middle {
-  margin-left: 20%;
-  margin-top: 5%;
-  }
 /* ---------------------------------images--------------------------------------- */
 
 img.big {
@@ -115,7 +90,7 @@ img.small {
 
 img.border {
   height: 22px;
-  width: auto;
+  width: 100%;
 }
 /* ---------------------------------navbar--------------------------------------- */
 .navbar-inverse {
@@ -126,10 +101,10 @@ img.border {
 
 .navbar-nav a{
   text-decoration: none;
-  color: white;
-  &, &:active, &:visited, &:hover {
-    color: white;
-  }
+  color: inherit;
+}
+p.navbar-text.pull-right a {
+  color: inherit;
 }
 
 /* ---------------------------------jumbotron--------------------------------------- */
@@ -144,11 +119,20 @@ img.border {
 }
 
 /*-----------------------------------container------------------------------------------- */
+
 .container {
-  padding: 0px;
-  margin-left: 5%;
-  margin-right: 20px;
-  width: 1300px;
+  margin: 0px;
+  min-width: 1200px;
+}
+
+/*----------------------------------- row ------------------------------------------- */
+
+.row {
+  margin-top: 70px;
+}
+
+.row.links {
+  margin-top: 0;
 }
 
 /* ---------------------------------body--------------------------------------- */
@@ -156,10 +140,11 @@ img.border {
 body {
   background-size: 100%;
   padding: 0;
+  margin:0;
   text-align: justify;
   background-color: white;
-  margin-bottom: 60px;
   color: #4B464B;
+  overflow-x: hidden;
   font-family: 'Ubuntu', sans-serif;
 }
 
@@ -182,12 +167,15 @@ body hr {
 
 /* -----------------------------Turning background pink an text white------------------------------ */
 
-.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-  background-color: grey;
+.navbar-inverse .navbar-nav>.active>a {
+  background-color: blue;
 }
 
 .navbar-inverse .navbar-nav > li > a {
   color: white;
+  &, &:active, &:visited, &:hover {
+    color: white;
+  }
 }
 
 .navbar-inverse .navbar-brand {
@@ -202,18 +190,6 @@ body hr {
   color: white;
 }
 
-.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
-  background-color: #FF5C5C;
-}
-
-.nav.navbar-nav.navbar-right.righter {
-  margin-right: -190px;
-  margin-top: 14px;
-}
-
-p.navbar-text.lefter {
-  margin-left: -70px;
-}
 
 /* ------------------------------tables--------------------------------*/
 thead {
@@ -240,9 +216,6 @@ thead {
 * {
   margin: 0;
   padding: 0;
-}
-body {
-  font-family: arial, verdana, tahoma;
 }
 
 /*Time to apply widths for accordian to work
@@ -308,7 +281,7 @@ default width = 960/7 = 137px;
   background: rgba(0, 0, 0, 0.5);
   position: absolute;
   left: 0; bottom: 0;
-width: 800px;
+  width: 800px;
 
 }
 .image_title a {
@@ -318,3 +291,48 @@ width: 800px;
   padding: 20px;
   font-size: 16px;
 }
+/* ----------------------------------------- sections ------------------------ */
+
+.light-blue {
+  background-color: #4BCCC4; //work and education //light-blue //türkis
+  margin: 0 -12%;
+  /* add back negative margin value */
+  padding: 0 -12%;
+}
+
+.light-blue .row {
+  padding: 0 10% 20px 120px;
+
+}
+
+.green-blue {
+  background-color: #255D55; //experience //green-blue
+  margin: 0 -12%;
+  /* add back negative margin value */
+  padding: 0 -12%;
+  color: white;
+}
+
+.green-blue .row {
+  padding: 0 10% 20px 130px;
+}
+
+.dark {
+  background-color: #303030; //skills //dark
+  margin: 0 -12%;
+  /* add back negative margin value */
+  padding: 0 -12%;
+  color: white;
+}
+
+.dark .row {
+  padding: 0 10% 20px 10%;
+}
+
+/* ----------------------------------------- lists ------------------------ */
+
+ul.list-inline .btn {
+  margin-top: 4%;
+  margin-right:4%;
+}
+
